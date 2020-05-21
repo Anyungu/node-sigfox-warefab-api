@@ -39,7 +39,7 @@ cacheStart();
 
 
 //main web route
-app.get('/', webRouter);
+app.use('/', webRouter);
 
 
 //main api route
