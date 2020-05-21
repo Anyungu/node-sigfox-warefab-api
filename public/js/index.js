@@ -13,7 +13,7 @@ function collectData () {
     }).then(function (data) {
 
         // This is the JSON from our response
-        document.getElementById("payload").innerHTML = data.value === undefined ? "Payload Not Available" : data.value.payload;
+        document.getElementById("payload").innerHTML = data.value === undefined ? "Payload Not Available!" : data.value.payload;
         document.getElementById("stamp").innerHTML = data.value === undefined ? "00:00 00:00" : data.value.time ;
         document.getElementById("lat").innerHTML = data.value === undefined ? "x": data.value.latitude;
         document.getElementById("lng").innerHTML = data.value === undefined ? "y": data.value.longitude;
