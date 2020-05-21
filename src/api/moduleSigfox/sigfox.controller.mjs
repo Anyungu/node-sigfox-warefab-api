@@ -10,7 +10,7 @@ export async function postMetric(req, res) {
     try {
 
         //decode payload
-        const decoded = decodeData(req.body);
+        const decoded = decodeData(req.body.data);
 
         
         //store the data with rounding off
