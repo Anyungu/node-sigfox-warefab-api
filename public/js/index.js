@@ -36,9 +36,9 @@ function collectData () {
 
 }
 
-setInterval(() => {
-    collectData()
-}, 10000);
+// setInterval(() => {
+//     collectData()
+// }, 10000);
 
 
 
