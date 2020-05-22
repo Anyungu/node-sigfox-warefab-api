@@ -38,7 +38,7 @@ function collectData () {
 
 setInterval(() => {
     collectData()
-}, 10000);
+}, 1000);
 
 
 
