@@ -12,7 +12,7 @@ function collectData () {
         }
     }).then(function (data) {
 
-        console.log(data.value);
+        console.log(data);
 
         // This is the JSON from our response
         document.getElementById("payload").innerHTML = data.value === undefined ? "Payload Not Available!" : data.value.payload;

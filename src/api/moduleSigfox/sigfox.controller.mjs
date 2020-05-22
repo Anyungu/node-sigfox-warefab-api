@@ -36,8 +36,6 @@ export async function postMetric(req, res) {
 export async function getMetric(req, res) {
 
     try {
-
-        console.log(1);
     
         //fetch data in the cache
         const cacheResponse = await getCacheData();
