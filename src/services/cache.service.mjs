@@ -38,7 +38,6 @@ export async function getCacheData() {
         
     } catch (error) {
 
-        console.log(error);
         return { error: error.message };
     }
   
