@@ -26,6 +26,8 @@ export async function getCacheData() {
 
     try {
 
+        console.log(1);
+
         var x = globalThis.nodeCacheInstance;
 
         let res = x.get("dataV");
