@@ -22,7 +22,6 @@ function collectData () {
         document.getElementById("dev").innerHTML =  data.data.value === undefined ? "xxxxxx" : data.data.value.device;
     }).catch(function (err) {
         // There was an error
-        console.warn('Something went wrong.', err);
 
         document.getElementById("payload").innerHTML = "Payload Not Available" 
         document.getElementById("stamp").innerHTML =  "00:00 00:00" 
