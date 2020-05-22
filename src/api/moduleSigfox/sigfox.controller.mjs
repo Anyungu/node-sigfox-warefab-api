@@ -12,7 +12,7 @@ export async function postMetric(req, res) {
         //decode payload
         const decoded = decodeData(req.body.data, req.body.device);
 
-        console.log(decoded);
+     
         //store
         const cacheResponse = await cacheData(decoded.value);
 

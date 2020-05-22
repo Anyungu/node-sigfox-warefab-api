@@ -5,6 +5,8 @@ export async function cacheData(value) {
 
     try {
 
+        console.log(value);
+
         var x = globalThis.nodeCacheInstance;
 
         let success =  x.set( "dataV", value, 604800);
