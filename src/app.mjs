@@ -8,9 +8,6 @@ const express = require('express');
 //cors
 var cors = require('cors');
 
-//json body parser
-const bodyParser = require('body-parser')
-
 
 //import main Api Route
 import {restRouter} from './api/index.mjs';
@@ -31,8 +28,8 @@ const PORT = 9200;
 app.use(cors());
 
 //basic configs
-app.use(bodyParser.urlencoded({extended: true}))
-app.use(bodyParser.json())
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 

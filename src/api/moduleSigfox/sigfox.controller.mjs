@@ -9,6 +9,10 @@ export async function postMetric(req, res) {
 
     try {
 
+        console.log(req.body);
+        console.log(req.body.data);
+        console.log(req.body.device);
+
         //decode payload
         const decoded = decodeData(req.body.data, req.body.device);
 
