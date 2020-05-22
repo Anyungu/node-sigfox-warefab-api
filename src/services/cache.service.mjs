@@ -5,8 +5,6 @@ export async function cacheData(value) {
 
     try {
 
-        console.log(value);
-
         var x = globalThis.nodeCacheInstance;
 
         let success =  x.set( "dataV", value, 604800);
@@ -31,6 +29,8 @@ export async function getCacheData() {
         var x = globalThis.nodeCacheInstance;
 
         let res = x.get("dataV");
+
+        confirm.log(res);
 
 
         if (res === undefined) {
