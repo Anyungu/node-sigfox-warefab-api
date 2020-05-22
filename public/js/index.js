@@ -19,6 +19,7 @@ function collectData () {
         document.getElementById("lng").innerHTML = data.value === undefined ? "y": data.value.longitude;
         document.getElementById("temp").innerHTML = data.value === undefined ? "room": data.value.temperature;
         document.getElementById("hum").innerHTML =  data.value === undefined ? "normal" : data.value.humidity;
+        document.getElementById("dev").innerHTML =  data.value === undefined ? "xxxxxx" : data.value.device;
     }).catch(function (err) {
         // There was an error
         console.warn('Something went wrong.', err);
@@ -29,6 +30,7 @@ function collectData () {
         document.getElementById("lng").innerHTML =  "y"
         document.getElementById("temp").innerHTML = "room"
         document.getElementById("hum").innerHTML =   "normal"
+        document.getElementById("dev").innerHTML =   "xxxxxx"
     });
     
 
