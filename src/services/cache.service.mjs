@@ -26,14 +26,9 @@ export async function getCacheData() {
 
     try {
 
-        console.log(1);
-
         var x = globalThis.nodeCacheInstance;
 
         let res = x.get("dataV");
-
-        confirm.log(res);
-
 
         if (res === undefined) {
             return { error: "Data Not Found"};
@@ -42,6 +37,8 @@ export async function getCacheData() {
         return {value: res};
         
     } catch (error) {
+
+        console.log(error);
         return { error: error.message };
     }
   
