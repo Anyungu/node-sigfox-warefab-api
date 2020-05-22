@@ -40,6 +40,8 @@ export async function getMetric(req, res) {
         //fetch data in the cache
         const cacheResponse = await getCacheData();
 
+        console.log(cacheResponse);
+
 
         if (cacheResponse && cacheResponse.error) {
 
