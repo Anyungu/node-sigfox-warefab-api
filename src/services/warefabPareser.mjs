@@ -6,7 +6,10 @@ export async function decodeData(payload) {
 
     try {
 
+
       
+        console.log(payload.data);
+        console.log(payload.device);
 
 
         let lat_1, lng_1, latitude, longitute, temperature, humidity;
